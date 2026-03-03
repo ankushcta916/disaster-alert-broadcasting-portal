@@ -18,7 +18,7 @@ The system is optimized for:
 
 ---
 
-## 🏗 System Architecture
+##  System Architecture
 
 ```
 Client (Browser - S3 Hosted Website)
@@ -34,36 +34,36 @@ Email Subscribers
 
 ---
 
-## ☁️ AWS Services Used
+##  AWS Services Used
 
-### 🗂 Amazon S3
+### Amazon S3
 - Hosts static frontend (HTML, CSS, JavaScript)
 - Configured for static website hosting
 - Public read access for web assets
 
-### 🌐 Amazon API Gateway
+###  Amazon API Gateway
 - HTTP API for routing alert requests
 - CORS configured for browser communication
 - Integrated with Lambda backend
 
-### ⚡ AWS Lambda
+### AWS Lambda
 - Serverless backend logic
 - Processes alert messages
 - Publishes events to SNS
 - IAM role-based permissions
 
-### 📢 Amazon SNS
+### Amazon SNS
 - Handles fan-out message distribution
 - Sends email notifications to confirmed subscribers
 - Highly scalable, event-driven messaging
 
-### 🔐 AWS IAM
+###  AWS IAM
 - Role-based access control
 - Principle of least privilege enforced for Lambda execution
 
 ---
 
-## 🔐 Security Design
+## Security Design
 
 - IAM execution role restricts Lambda to SNS publish permissions only.
 - API Gateway endpoint protected via frontend login (demo-level authentication).
@@ -74,7 +74,7 @@ Email Subscribers
 
 ---
 
-## 🚀 Features
+## Features
 
 - Admin login interface
 - Real-time disaster alert broadcasting
@@ -85,7 +85,7 @@ Email Subscribers
 
 ---
 
-## 🧠 Design Decisions
+## Design Decisions
 
 ### Why Serverless?
 - Eliminates server provisioning
@@ -107,7 +107,7 @@ Email Subscribers
 
 ---
 
-## 📸 System Screenshots
+##  System Screenshots
 
 ### S3 Static Hosting
 ![S3](screenshots/s3-hosting.png)
@@ -131,6 +131,7 @@ Email Subscribers
 ![Email](screenshots/email-received.png)
 
 ---
+
 
 
 
