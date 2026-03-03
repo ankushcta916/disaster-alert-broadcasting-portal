@@ -132,16 +132,7 @@ Email Subscribers
 
 ---
 
-## 🛠 Deployment Steps 
 
-1. Create S3 bucket and enable static website hosting.
-2. Deploy frontend files (HTML, CSS, JS).
-3. Create Lambda function (`sendAlert`).
-4. Create SNS topic and confirm email subscriptions.
-5. Configure API Gateway route to Lambda.
-6. Enable CORS.
-7. Attach IAM permissions to Lambda.
 
----
 
 
