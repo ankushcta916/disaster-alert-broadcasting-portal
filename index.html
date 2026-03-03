@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disaster Alert Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Disaster Alert Broadcasting Portal</h1>
+
+<div id="loginSection">
+    <h2>Admin Login</h2>
+    <input type="password" id="adminPassword" placeholder="Enter Admin Password">
+    <button onclick="login()">Login</button>
+    <p id="loginError" class="error"></p>
+</div>
+
+<div id="alertSection" style="display:none;">
+    <h2>Send Disaster Alert</h2>
+    <textarea id="alertMessage" placeholder="Enter alert message"></textarea>
+    <button onclick="sendAlert()">Send Alert</button>
+</div>
+
+<!-- Popup Notification -->
+<div id="popup" class="popup"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
