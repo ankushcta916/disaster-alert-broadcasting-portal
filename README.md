@@ -132,40 +132,7 @@ Email Subscribers
 
 ---
 
-## 📊 Scalability & Reliability
-
-- Stateless Lambda architecture
-- SNS ensures reliable message delivery
-- No persistent server dependency
-- Horizontally scalable without configuration changes
-
-The system can handle increased traffic automatically without infrastructure modification.
-
----
-
-## 💰 Cost Considerations
-
-Designed to operate within AWS Free Tier limits:
-
-- Lambda: 1M requests/month free
-- SNS: 1M publishes/month free
-- API Gateway: 1M HTTP requests/month free
-- S3: Free Tier storage + request limits
-
----
-
-## 🔄 Alert Flow
-
-1. Admin logs into portal.
-2. Admin enters disaster alert message.
-3. Browser sends POST request to API Gateway.
-4. API Gateway triggers Lambda function.
-5. Lambda publishes alert to SNS topic.
-6. SNS distributes email notifications to subscribers.
-
----
-
-## 🛠 Deployment Steps (High-Level)
+## 🛠 Deployment Steps 
 
 1. Create S3 bucket and enable static website hosting.
 2. Deploy frontend files (HTML, CSS, JS).
@@ -177,29 +144,4 @@ Designed to operate within AWS Free Tier limits:
 
 ---
 
-## 📈 Future Enhancements
 
-- Backend authentication using Amazon Cognito
-- SMS notifications via SNS
-- Alert logging with DynamoDB
-- Role-based admin management
-- CloudFront CDN integration
-- Custom domain via Route 53
-
----
-
-## 🎯 Key Learning Outcomes
-
-- Serverless architecture design
-- IAM policy configuration
-- API Gateway–Lambda integration
-- CORS debugging and configuration
-- Event-driven cloud messaging
-- End-to-end AWS service orchestration
-
----
-
-## 👨‍💻 Author
-
-Anku  
-Cloud & Serverless Architecture Enthusiast
